@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 Todo todo = TodoRoomDatabase.getInstance(getApplicationContext())
                         .todoDao()
-                        .findTodoById(4);
+                        .findTodoById(3);
 
                 Log.d(TAG, "run: " + todo.toString());
                 if (todo != null) {
